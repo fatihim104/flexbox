@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulama-Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: goldenrod;
+            }
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+
+        li:hover {
+            background-color: rgb(233, 184, 61);
+            color: #fff;
+        }
+
+        li a {
+            display: block;
+            padding: 16px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @media screen and (max-width:900px) {
+            ul {
+                justify-content: space-around;
+            }
+
+        }
+
+        @media screen and (max-width:600px) {
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+
+            li a {
+                text-align: center;
+                padding: 10px;
+                border-top: 1px solid rgba(255, 255, 255, 0.3);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            }
+
+            li:last-child a {
+                border-bottom: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul class="menü">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+
+</html>
